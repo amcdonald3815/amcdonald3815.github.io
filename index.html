@@ -46,19 +46,34 @@
             text-decoration: underline;
         }
 
+        /* Headshot */
+        .headshot-section {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 50px 10px 20px;
+        }
+
+        .headshot {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 7px solid #12263a;
+        }
+
         /* Hero Section */
         .hero {
             background-color: #ffffff;
-            min-height: 500px;
+            min-height: 350px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 70px;
-            padding: 70px 10%;
+            padding: 40px 10%;
         }
 
         .hero-text {
-            max-width: 550px;
+            max-width: 700px;
+            text-align: center;
         }
 
         .hero-text h1 {
@@ -70,14 +85,6 @@
         .hero-text p {
             font-size: 20px;
             color: #555;
-        }
-
-        .headshot {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 7px solid #12263a;
         }
 
         /* General Sections */
@@ -147,11 +154,6 @@
 
         /* Mobile */
         @media (max-width: 700px) {
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-
             .hero-text h1 {
                 font-size: 36px;
             }
@@ -181,6 +183,11 @@
         </div>
     </nav>
 
+    <!-- Headshot at the Beginning -->
+    <div class="headshot-section">
+        <img src="headshot.jpg" alt="Headshot" class="headshot">
+    </div>
+
     <!-- About Section -->
     <section class="hero" id="about">
 
@@ -192,9 +199,53 @@
             </p>
         </div>
 
-        <img src="headshot.jpg" alt="Headshot" class="headshot">
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Detail oriented</div>
+
+            <div class="skill">Team player</div>
+
+            <div class="skill">Proficient in TC2000</div>
+
+            <div class="skill">Proficient in VectorVest</div>
+
+            <div class="skill">Proficient in MarketSurge</div>
+
+            <div class="skill">Proficient in Microsoft Office</div>
+
+        </div>
 
     </section>
 
-    <
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+            <h3>How to pick the perfect stock.</h3>
+
+            <p>
+                Studied the process of using different financial software systems to find successful stocks.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Professional Finance Portfolio
+    </footer>
+
+</body>
+</html>
 ```
