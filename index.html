@@ -1,39 +1,200 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Profile</title>
+    <title>Professional Profile</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #12263a;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ffffff;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            padding: 70px 10%;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #12263a;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        .headshot {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 7px solid #12263a;
+        }
+
+        /* General Sections */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #12263a;
+            margin-bottom: 40px;
+        }
+
+        /* Skills */
+        .skills {
+            background-color: #eef2f6;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 35px;
+            border-left: 5px solid #12263a;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .project h3 {
+            color: #12263a;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #555;
+            font-size: 17px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #12263a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>About Me</h1>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Finance Portfolio</div>
 
-    <p>
-        I am a junior studying finance with an interest in investment banking
-        and stock analysis.
-    </p>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
 
-    <h2>Skills</h2>
+    <!-- About Section -->
+    <section class="hero" id="about">
 
-    <ul>
-        <li>Detail oriented</li>
-        <li>Team player</li>
-        <li>Proficient in TC2000</li>
-        <li>Proficient in VectorVest</li>
-        <li>Proficient in MarketSurge</li>
-        <li>Proficient in Microsoft Office</li>
-    </ul>
+        <div class="hero-text">
+            <h1>About Me</h1>
 
-    <h2>Projects</h2>
+            <p>
+                I am a junior studying finance with an interest in investment banking and stock analysis.
+            </p>
+        </div>
 
-    <h3>How to Pick the Perfect Stock</h3>
+        <img src="headshot.jpg" alt="Headshot" class="headshot">
 
-    <p>
-        Studied the process of using different financial software systems
-        to find successful stocks.
-    </p>
+    </section>
 
-</body>
-</html>
+    <
+```
